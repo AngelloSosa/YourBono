@@ -1,6 +1,10 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { SignInPage } from './auth/pages/SignInPage'
+import { HomePage } from './auth/pages/HomePage'
+import { NewBondPage } from './auth/pages/NewBondPage'
+import { EditBondPage } from './auth/pages/EditBondPage'
+import { BondsListPage } from './auth/pages/BondListPage'
 
 function App() {
 
@@ -9,6 +13,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/sign-in' element={<SignInPage />}/>
+        <Route path='/home' element={<HomePage />}/>
+        <Route path='/newbond' element={<NewBondPage />}/>
+        <Route path='/editbond' element={<EditBondPage />}/>
+        <Route path='/bondslist' element={<BondsListPage />}/>
       </Routes>
     </BrowserRouter>
   )
